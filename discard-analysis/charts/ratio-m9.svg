@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="1100" height="540" preserveAspectRatio="xMinYMin meet" viewBox="0 0 1100 540" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="1100" height="540"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-540)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="1100" height="540" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(100%,100%,100%); fill-rule: evenodd;"/>
+			<text x="84" y="490" style="font-family: Microsoft YaHei; font-size: 30px;fill: rgb(9%,12%,20%); stroke:none;" transform="translate(0,980) scale(1,-1)">手牌数 m = 9</text>
+			<path d="M 420,500 L 451,500 Z" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 3;"/>
+			<circle cx="435.5" cy="500" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+			<text x="462" y="493" style="font-family: Microsoft YaHei; font-size: 21px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,986) scale(1,-1)">j = 1</text>
+			<path d="M 573,500 L 604,500 Z" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 3;"/>
+			<rect x="584.5" y="496.0" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+			<text x="615" y="493" style="font-family: Microsoft YaHei; font-size: 21px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,986) scale(1,-1)">j = 2</text>
+			<path d="M 726,500 L 757,500 Z" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="737.5 500, 741.5 504, 745.5 500, 741.5 496" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+			<text x="768" y="493" style="font-family: Microsoft YaHei; font-size: 21px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,986) scale(1,-1)">j = 3</text>
+			<path d="M 879,500 L 910,500 Z" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 3;"/>
+			<polygon points="894.5 504, 891.0359 498, 897.9641 498" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+			<text x="921" y="493" style="font-family: Microsoft YaHei; font-size: 21px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,986) scale(1,-1)">j = 4</text>
+			<g transform="">
+				<g transform="">
+					<g transform="">
+						<path d="M 90,112 L 1036,112 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 105.679558,112 L 105.679558,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 236.342541,112 L 236.342541,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 367.005525,112 L 367.005525,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 497.668508,112 L 497.668508,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 628.331492,112 L 628.331492,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 758.994475,112 L 758.994475,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 889.657459,112 L 889.657459,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 1020.320442,112 L 1020.320442,107 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,105.679558,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">一对</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,236.342541,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">两对</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,367.005525,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">三条</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,497.668508,102)">
+							<text x="-22.882568359375" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">顺子†</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,628.331492,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">同花</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,758.994475,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">葫芦</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,889.657459,102)">
+							<text x="-19.0" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">四条</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,1020.320442,102)">
+							<text x="-32.382568359375" y="-19.0" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(20%,25%,33%); stroke:none;" transform="translate(0,-38) scale(1,-1)">同花顺†</text>
+						</g>
+					</g>
+				</g>
+				<g transform="">
+					<g transform="">
+						<path d="M 90,112 L 90,434 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 90,112 L 86,112 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,147.777778 L 86,147.777778 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,183.555556 L 86,183.555556 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,219.333333 L 86,219.333333 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,255.111111 L 86,255.111111 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,290.888889 L 86,290.888889 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,326.666667 L 86,326.666667 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,362.444444 L 86,362.444444 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,398.222222 L 86,398.222222 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 90,434 L 86,434 Z" style="stroke: rgb(66%,70%,76%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,80,112)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">1.0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,147.777778)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">1.2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,183.555556)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">1.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,219.333333)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">1.6</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,255.111111)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">1.8</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,290.888889)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">2.0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,326.666667)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">2.2</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,362.444444)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">2.4</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,398.222222)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">2.6</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,80,434)">
+							<text x="-25.444335937500004" y="-7.200000000000001" style="font-family: Microsoft YaHei; font-size: 18px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,-14) scale(1,-1)">2.8</text>
+						</g>
+					</g>
+				</g>
+				<path d="M 90,147.777778 L 1036,147.777778 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,183.555556 L 1036,183.555556 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,219.333333 L 1036,219.333333 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,255.111111 L 1036,255.111111 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,290.888889 L 1036,290.888889 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,326.666667 L 1036,326.666667 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,362.444444 L 1036,362.444444 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,398.222222 L 1036,398.222222 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<path d="M 90,434 L 1036,434 Z" style="stroke: rgb(89%,91%,93%); stroke-linecap: butt; stroke-width: 0.7;"/>
+				<g transform="">
+					<polyline points="105.6796 162.0845, 236.3425 158.3596, 367.0055 187.5009, 497.6685 191.5551, 628.3315 183.5845, 758.9945 181.2975, 889.6575 201.211, 1020.32 203.377" style="stroke: rgb(14%,38%,92%); stroke-linecap: round; stroke-width: 2.8; fill: None; fill-rule: evenodd;"/>
+					<circle cx="105.67955801104972" cy="162.08445836570849" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="236.3425414364641" cy="158.3596499333842" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="367.0055248618784" cy="187.500919496679" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="497.6685082872928" cy="191.5551305895038" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="628.3314917127071" cy="183.58449410685466" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="758.9944751381215" cy="181.29752967952075" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="889.6574585635359" cy="201.21101822999265" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<circle cx="1020.3204419889502" cy="203.37695423990542" r="4.0" style="stroke: rgb(14%,38%,92%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(14%,38%,92%); fill-rule: evenodd;"/>
+					<polyline points="105.6796 190.6112, 236.3425 189.25, 367.0055 240.5299, 497.6685 258.9194, 628.3315 225.5387, 758.9945 236.7205, 889.6575 271.6318, 1020.32 278.2912" style="stroke: rgb(85%,46%,2%); stroke-linecap: round; stroke-width: 2.8; fill: None; fill-rule: evenodd;"/>
+					<rect x="101.67955801104972" y="186.61118094513068" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="232.3425414364641" y="185.24995275637949" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="363.0055248618784" y="236.52985489813705" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="493.6685082872928" y="254.91936763504788" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="624.3314917127071" y="221.53870407561217" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="754.9944751381215" y="232.72049949655576" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="885.6574585635359" y="267.63176073612647" width="8.0" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<rect x="1016.3204419889502" y="274.2912055099499" width="8.000000000000114" height="8.0" style="stroke: rgb(85%,46%,2%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(85%,46%,2%); fill-rule: evenodd;"/>
+					<polyline points="105.6796 210.4958, 236.3425 212.4718, 367.0055 282.6492, 497.6685 321.7862, 628.3315 250.7382, 758.9945 280.9688, 889.6575 328.5287, 1020.32 339.211" style="stroke: rgb(9%,52%,45%); stroke-linecap: round; stroke-width: 2.8; fill: None; fill-rule: evenodd;"/>
+					<polygon points="101.6796 210.4958, 105.6796 214.4958, 109.6796 210.4958, 105.6796 206.4958" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="232.3425 212.4718, 236.3425 216.4718, 240.3425 212.4718, 236.3425 208.4718" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="363.0055 282.6492, 367.0055 286.6492, 371.0055 282.6492, 367.0055 278.6492" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="493.6685 321.7862, 497.6685 325.7862, 501.6685 321.7862, 497.6685 317.7862" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="624.3315 250.7382, 628.3315 254.7382, 632.3315 250.7382, 628.3315 246.7382" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="754.9945 280.9688, 758.9945 284.9688, 762.9945 280.9688, 758.9945 276.9688" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="885.6575 328.5287, 889.6575 332.5287, 893.6575 328.5287, 889.6575 324.5287" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polygon points="1016.32 339.211, 1020.32 343.211, 1024.32 339.211, 1020.32 335.211" style="stroke: rgb(9%,52%,45%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(9%,52%,45%); fill-rule: evenodd;"/>
+					<polyline points="105.6796 211.3677, 236.3425 233.0444, 367.0055 319.5054, 497.6685 384.2152, 628.3315 268.1681, 758.9945 318.6138, 889.6575 377.5919, 1020.32 394.9664" style="stroke: rgb(54%,36%,96%); stroke-linecap: round; stroke-width: 2.8; fill: None; fill-rule: evenodd;"/>
+					<polygon points="105.6796 215.3677, 102.2155 209.3677, 109.1437 209.3677" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="236.3425 237.0444, 232.8784 231.0444, 239.8066 231.0444" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="367.0055 323.5054, 363.5414 317.5054, 370.4696 317.5054" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="497.6685 388.2152, 494.2044 382.2152, 501.1326 382.2152" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="628.3315 272.1681, 624.8674 266.1681, 631.7956 266.1681" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="758.9945 322.6138, 755.5304 316.6138, 762.4586 316.6138" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="889.6575 381.5919, 886.1934 375.5919, 893.1216 375.5919" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+					<polygon points="1020.32 398.9664, 1016.856 392.9664, 1023.785 392.9664" style="stroke: rgb(54%,36%,96%); stroke-linecap: butt; stroke-width: 0.1; fill: rgb(54%,36%,96%); fill-rule: evenodd;"/>
+				</g>
+			</g>
+			<text x="88" y="449" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,898) scale(1,-1)">k/m</text>
+			<text x="544.0" y="52" style="font-family: Microsoft YaHei; font-size: 19px;fill: rgb(27%,33%,41%); stroke:none;" transform="translate(0,104) scale(1,-1)">牌型</text>
+			<text x="84" y="17" style="font-family: Microsoft YaHei; font-size: 15px;fill: rgb(39%,45%,54%); stroke:none;" transform="translate(0,34) scale(1,-1)">† 顺子、同花顺：j=1 为最优策略的抽样估计；j≥2 为近似策略。</text>
+		</g>
+	</g>
+</svg>

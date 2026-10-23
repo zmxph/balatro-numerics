@@ -1,0 +1,3546 @@
+{
+  "metadata": {
+    "deck": "standard 52-card deck without replacement; discards never return",
+    "hand_sizes": [
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "discard_rounds": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "discard_limit": 5,
+    "success": "contains a target core; targets overlap; straight flush includes royal flush",
+    "k_definition": "piecewise-linear inverse of exact direct-draw success probabilities",
+    "sampling_intervals": "individual approximate 95% normal intervals for a bounded conditional-success mean; exclude policy suboptimality and rounding",
+    "policy": "At each non-final step, maximize conditional probability of containing the target after a hypothetical future draw of d + round((t-1)*min(5,m-reserve)) cards. The held cards plus future drawn cards are used as a lookahead surrogate, not as actual accumulated inventory. Choose reserve on separate pilot samples. On the final step, maximize exact one-discard success probability over every legal action. Straight flush lookahead sums suit-wise union probabilities; at the final step the possible two-suit intersection for m=10 is subtracted exactly.",
+    "validation": "Exact no-discard DP vs independent integer combinatorial baseline; all 8 last-step optimizers vs physical-card enumeration on 15 reduced decks; multi-step rank/suit recursion vs independent physical-card enumeration on 4 reduced decks."
+  },
+  "records": [
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 6,
+      "j": 1,
+      "p": 0.8841897270431587,
+      "k": 7.961968145760268,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8841897270431587,
+        0.8841897270431587
+      ],
+      "sampling_ci95_k": [
+        7.961968145760268,
+        7.961968145760268
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.11581027295684132
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 6,
+      "j": 2,
+      "p": 0.9626244027961822,
+      "k": 9.424208711445097,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9626244027961822,
+        0.9626244027961822
+      ],
+      "sampling_ci95_k": [
+        9.424208711445097,
+        9.424208711445097
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.0373755972038178
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 6,
+      "j": 3,
+      "p": 0.9890067615307849,
+      "k": 10.58811431839781,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9890067615307849,
+        0.9890067615307849
+      ],
+      "sampling_ci95_k": [
+        10.58811431839781,
+        10.58811431839781
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.010993238469215126
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 6,
+      "j": 4,
+      "p": 0.9971114048228422,
+      "k": 11.579802258198784,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9971114048228422,
+        0.9971114048228422
+      ],
+      "sampling_ci95_k": [
+        11.579802258198784,
+        11.579802258198784
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.002888595177157764
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 7,
+      "j": 1,
+      "p": 0.9563606642707665,
+      "k": 9.228400438766291,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9563606642707665,
+        0.9563606642707665
+      ],
+      "sampling_ci95_k": [
+        9.228400438766291,
+        9.228400438766291
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.04363933572923345
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 7,
+      "j": 2,
+      "p": 0.9917684268190874,
+      "k": 10.792072097648152,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9917684268190874,
+        0.9917684268190874
+      ],
+      "sampling_ci95_k": [
+        10.792072097648152,
+        10.792072097648152
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.008231573180912574
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 7,
+      "j": 3,
+      "p": 0.9986395958952273,
+      "k": 11.930357783828315,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9986395958952273,
+        0.9986395958952273
+      ],
+      "sampling_ci95_k": [
+        11.930357783828315,
+        11.930357783828315
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.0013604041047727156
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 7,
+      "j": 4,
+      "p": 0.9998172872061216,
+      "k": 12.919010139794482,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9998172872061216,
+        0.9998172872061216
+      ],
+      "sampling_ci95_k": [
+        12.919010139794482,
+        12.919010139794482
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.00018271279387840263
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 8,
+      "j": 1,
+      "p": 0.9866487957873837,
+      "k": 10.41397103658537,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9866487957873837,
+        0.9866487957873837
+      ],
+      "sampling_ci95_k": [
+        10.41397103658537,
+        10.41397103658537
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.013351204212616312
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 8,
+      "j": 2,
+      "p": 0.998659893525494,
+      "k": 11.93501390738233,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.998659893525494,
+        0.998659893525494
+      ],
+      "sampling_ci95_k": [
+        11.93501390738233,
+        11.93501390738233
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.0013401064745059694
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 8,
+      "j": 3,
+      "p": 0.9998942854947674,
+      "k": 12.999964766586636,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9998942854947674,
+        0.9998942854947674
+      ],
+      "sampling_ci95_k": [
+        12.999964766586636,
+        12.999964766586636
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.00010571450523253513
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 8,
+      "j": 4,
+      "p": 0.9999941895760278,
+      "k": 13.94501921520584,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999941895760278,
+        0.9999941895760278
+      ],
+      "sampling_ci95_k": [
+        13.94501921520584,
+        13.94501921520584
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 5.810423972229716e-06
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 9,
+      "j": 1,
+      "p": 0.996849734681089,
+      "k": 11.519777097902104,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.996849734681089,
+        0.996849734681089
+      ],
+      "sampling_ci95_k": [
+        11.519777097902104,
+        11.519777097902104
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.0031502653189110796
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 9,
+      "j": 2,
+      "p": 0.9998514920073523,
+      "k": 12.954972457487939,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9998514920073523,
+        0.9998514920073523
+      ],
+      "sampling_ci95_k": [
+        12.954972457487939,
+        12.954972457487939
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.00014850799264769915
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 9,
+      "j": 3,
+      "p": 0.9999952845351626,
+      "k": 13.955380199677434,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999952845351626,
+        0.9999952845351626
+      ],
+      "sampling_ci95_k": [
+        13.955380199677434,
+        13.955380199677434
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 4.715464837373347e-06
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 9,
+      "j": 4,
+      "p": 0.9999999201154414,
+      "k": 13.999244097203974,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999999201154414,
+        0.9999999201154414
+      ],
+      "sampling_ci95_k": [
+        13.999244097203974,
+        13.999244097203974
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 7.988455865418127e-08
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 10,
+      "j": 1,
+      "p": 0.9994691214757857,
+      "k": 12.552954903283846,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9994691214757857,
+        0.9994691214757857
+      ],
+      "sampling_ci95_k": [
+        12.552954903283846,
+        12.552954903283846
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.0005308785242143012
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 10,
+      "j": 2,
+      "p": 0.9999901169800569,
+      "k": 13.906482522582067,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999901169800569,
+        0.9999901169800569
+      ],
+      "sampling_ci95_k": [
+        13.906482522582067,
+        13.906482522582067
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 9.883019943145942e-06
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 10,
+      "j": 3,
+      "p": 0.9999999015373264,
+      "k": 13.999068302917012,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999999015373264,
+        0.9999999015373264
+      ],
+      "sampling_ci95_k": [
+        13.999068302917012,
+        13.999068302917012
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 9.846267357093761e-08
+    },
+    {
+      "kind": "pair",
+      "name": "一对",
+      "m": 10,
+      "j": 4,
+      "p": 0.9999999996720085,
+      "k": 13.999996896400088,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999999996720085,
+        0.9999999996720085
+      ],
+      "sampling_ci95_k": [
+        13.999996896400088,
+        13.999996896400088
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 3.2799149114230566e-10
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 6,
+      "j": 1,
+      "p": 0.35612305165288677,
+      "k": 7.52470514734435,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.35612305165288677,
+        0.35612305165288677
+      ],
+      "sampling_ci95_k": [
+        7.52470514734435,
+        7.52470514734435
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 6,
+      "j": 2,
+      "p": 0.5572504716278764,
+      "k": 8.665121399197627,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5572504716278764,
+        0.5572504716278764
+      ],
+      "sampling_ci95_k": [
+        8.665121399197627,
+        8.665121399197627
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 6,
+      "j": 3,
+      "p": 0.7100374475723259,
+      "k": 9.586056791609899,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7100374475723259,
+        0.7100374475723259
+      ],
+      "sampling_ci95_k": [
+        9.586056791609899,
+        9.586056791609899
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 6,
+      "j": 4,
+      "p": 0.8173753885411383,
+      "k": 10.368588021813698,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8173753885411383,
+        0.8173753885411383
+      ],
+      "sampling_ci95_k": [
+        10.368588021813698,
+        10.368588021813698
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 7,
+      "j": 1,
+      "p": 0.5887061899394441,
+      "k": 8.839700320974334,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5887061899394441,
+        0.5887061899394441
+      ],
+      "sampling_ci95_k": [
+        8.839700320974334,
+        8.839700320974334
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 7,
+      "j": 2,
+      "p": 0.7930963599873707,
+      "k": 10.155719628919163,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7930963599873707,
+        0.7930963599873707
+      ],
+      "sampling_ci95_k": [
+        10.155719628919163,
+        10.155719628919163
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 7,
+      "j": 3,
+      "p": 0.9033226245395064,
+      "k": 11.20847759061344,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9033226245395064,
+        0.9033226245395064
+      ],
+      "sampling_ci95_k": [
+        11.20847759061344,
+        11.20847759061344
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 7,
+      "j": 4,
+      "p": 0.958218938922999,
+      "k": 12.06545731575339,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.958218938922999,
+        0.958218938922999
+      ],
+      "sampling_ci95_k": [
+        12.06545731575339,
+        12.06545731575339
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 8,
+      "j": 1,
+      "p": 0.7853806591124639,
+      "k": 10.088071582719165,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7853806591124639,
+        0.7853806591124639
+      ],
+      "sampling_ci95_k": [
+        10.088071582719165,
+        10.088071582719165
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 8,
+      "j": 2,
+      "p": 0.9296747737002887,
+      "k": 11.60284967469902,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9296747737002887,
+        0.9296747737002887
+      ],
+      "sampling_ci95_k": [
+        11.60284967469902,
+        11.60284967469902
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 8,
+      "j": 3,
+      "p": 0.979684706750883,
+      "k": 12.765771700133271,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.979684706750883,
+        0.979684706750883
+      ],
+      "sampling_ci95_k": [
+        12.765771700133271,
+        12.765771700133271
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 8,
+      "j": 4,
+      "p": 0.9949502220592814,
+      "k": 13.776911638952978,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9949502220592814,
+        0.9949502220592814
+      ],
+      "sampling_ci95_k": [
+        13.776911638952978,
+        13.776911638952978
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 9,
+      "j": 1,
+      "p": 0.911601841963371,
+      "k": 11.33237990348082,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.911601841963371,
+        0.911601841963371
+      ],
+      "sampling_ci95_k": [
+        11.33237990348082,
+        11.33237990348082
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 9,
+      "j": 2,
+      "p": 0.9833848658514125,
+      "k": 12.886488306376856,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9833848658514125,
+        0.9833848658514125
+      ],
+      "sampling_ci95_k": [
+        12.886488306376856,
+        12.886488306376856
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 9,
+      "j": 3,
+      "p": 0.9974029160100182,
+      "k": 14.054794820090315,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9974029160100182,
+        0.9974029160100182
+      ],
+      "sampling_ci95_k": [
+        14.054794820090315,
+        14.054794820090315
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 9,
+      "j": 4,
+      "p": 0.9996880251943439,
+      "k": 15.089812573461478,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9996880251943439,
+        0.9996880251943439
+      ],
+      "sampling_ci95_k": [
+        15.089812573461478,
+        15.089812573461478
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 10,
+      "j": 1,
+      "p": 0.9714937377483367,
+      "k": 12.498543736964791,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9714937377483367,
+        0.9714937377483367
+      ],
+      "sampling_ci95_k": [
+        12.498543736964791,
+        12.498543736964791
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 10,
+      "j": 2,
+      "p": 0.9972878494170248,
+      "k": 14.006593503355555,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9972878494170248,
+        0.9972878494170248
+      ],
+      "sampling_ci95_k": [
+        14.006593503355555,
+        14.006593503355555
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 10,
+      "j": 3,
+      "p": 0.9998098662921722,
+      "k": 15.470999426499654,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9998098662921722,
+        0.9998098662921722
+      ],
+      "sampling_ci95_k": [
+        15.470999426499654,
+        15.470999426499654
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "two_pair",
+      "name": "两对",
+      "m": 10,
+      "j": 4,
+      "p": 0.9999914399544532,
+      "k": 16.593269747272537,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9999914399544532,
+        0.9999914399544532
+      ],
+      "sampling_ci95_k": [
+        16.593269747272537,
+        16.593269747272537
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 6,
+      "j": 1,
+      "p": 0.16967243996199813,
+      "k": 8.905528006101752,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.16967243996199813,
+        0.16967243996199813
+      ],
+      "sampling_ci95_k": [
+        8.905528006101752,
+        8.905528006101752
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 6,
+      "j": 2,
+      "p": 0.31148645774912187,
+      "k": 10.926510573038021,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.31148645774912187,
+        0.31148645774912187
+      ],
+      "sampling_ci95_k": [
+        10.926510573038021,
+        10.926510573038021
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 6,
+      "j": 3,
+      "p": 0.44861090542726195,
+      "k": 12.531280673298289,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.44861090542726195,
+        0.44861090542726195
+      ],
+      "sampling_ci95_k": [
+        12.531280673298289,
+        12.531280673298289
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 6,
+      "j": 4,
+      "p": 0.5740508437755923,
+      "k": 13.924612778088681,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5740508437755923,
+        0.5740508437755923
+      ],
+      "sampling_ci95_k": [
+        13.924612778088681,
+        13.924612778088681
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 7,
+      "j": 1,
+      "p": 0.26338767220239373,
+      "k": 10.295064469605155,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.26338767220239373,
+        0.26338767220239373
+      ],
+      "sampling_ci95_k": [
+        10.295064469605155,
+        10.295064469605155
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 7,
+      "j": 2,
+      "p": 0.44951729669202684,
+      "k": 12.541447155613252,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.44951729669202684,
+        0.44951729669202684
+      ],
+      "sampling_ci95_k": [
+        12.541447155613252,
+        12.541447155613252
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 7,
+      "j": 3,
+      "p": 0.6079936310526313,
+      "k": 14.309078216051741,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.6079936310526313,
+        0.6079936310526313
+      ],
+      "sampling_ci95_k": [
+        14.309078216051741,
+        14.309078216051741
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 7,
+      "j": 4,
+      "p": 0.736913024236666,
+      "k": 15.842276148901213,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.736913024236666,
+        0.736913024236666
+      ],
+      "sampling_ci95_k": [
+        15.842276148901213,
+        15.842276148901213
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 8,
+      "j": 1,
+      "p": 0.36079307610426026,
+      "k": 11.519350996773735,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.36079307610426026,
+        0.36079307610426026
+      ],
+      "sampling_ci95_k": [
+        11.519350996773735,
+        11.519350996773735
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 8,
+      "j": 2,
+      "p": 0.5784506564005034,
+      "k": 13.973244673861773,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5784506564005034,
+        0.5784506564005034
+      ],
+      "sampling_ci95_k": [
+        13.973244673861773,
+        13.973244673861773
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 8,
+      "j": 3,
+      "p": 0.7432301291205903,
+      "k": 15.920190934732181,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7432301291205903,
+        0.7432301291205903
+      ],
+      "sampling_ci95_k": [
+        15.920190934732181,
+        15.920190934732181
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 8,
+      "j": 4,
+      "p": 0.8569212044728749,
+      "k": 17.617625953098447,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8569212044728749,
+        0.8569212044728749
+      ],
+      "sampling_ci95_k": [
+        17.617625953098447,
+        17.617625953098447
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 9,
+      "j": 1,
+      "p": 0.472434223371019,
+      "k": 12.798493465360869,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.472434223371019,
+        0.472434223371019
+      ],
+      "sampling_ci95_k": [
+        12.798493465360869,
+        12.798493465360869
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 9,
+      "j": 2,
+      "p": 0.7064387935608948,
+      "k": 15.466408848912483,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7064387935608948,
+        0.7064387935608948
+      ],
+      "sampling_ci95_k": [
+        15.466408848912483,
+        15.466408848912483
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 9,
+      "j": 3,
+      "p": 0.8550356365678584,
+      "k": 17.58545612971805,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8550356365678584,
+        0.8550356365678584
+      ],
+      "sampling_ci95_k": [
+        17.58545612971805,
+        17.58545612971805
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 9,
+      "j": 4,
+      "p": 0.9387250134328744,
+      "k": 19.43971016522794,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9387250134328744,
+        0.9387250134328744
+      ],
+      "sampling_ci95_k": [
+        19.43971016522794,
+        19.43971016522794
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 10,
+      "j": 1,
+      "p": 0.5653836897097662,
+      "k": 13.828813213627205,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5653836897097662,
+        0.5653836897097662
+      ],
+      "sampling_ci95_k": [
+        13.828813213627205,
+        13.828813213627205
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 10,
+      "j": 2,
+      "p": 0.7868739472528785,
+      "k": 16.523421349957502,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7868739472528785,
+        0.7868739472528785
+      ],
+      "sampling_ci95_k": [
+        16.523421349957502,
+        16.523421349957502
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 10,
+      "j": 3,
+      "p": 0.9085470149842165,
+      "k": 18.646174239859345,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9085470149842165,
+        0.9085470149842165
+      ],
+      "sampling_ci95_k": [
+        18.646174239859345,
+        18.646174239859345
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "three",
+      "name": "三条",
+      "m": 10,
+      "j": 4,
+      "p": 0.9668680134624962,
+      "k": 20.479957512640883,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9668680134624962,
+        0.9668680134624962
+      ],
+      "sampling_ci95_k": [
+        20.479957512640883,
+        20.479957512640883
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 10,
+      "j": 1,
+      "p": 0.6655882004259422,
+      "k": 14.1762768142842,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.0004950294897482796,
+      "sampling_ci95_p": [
+        0.6646179426260356,
+        0.6665584582258489
+      ],
+      "sampling_ci95_k": [
+        14.164188589415746,
+        14.188365039152657
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 22270936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 10,
+      "j": 2,
+      "p": 0.8890041715147152,
+      "k": 17.876898174133526,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00036773738492544377,
+      "sampling_ci95_p": [
+        0.8882834062402614,
+        0.8897249367891691
+      ],
+      "sampling_ci95_k": [
+        17.859633964230717,
+        17.89416238403633
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22270946,
+      "reserve": 9
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 10,
+      "j": 3,
+      "p": 0.971192861939491,
+      "k": 21.5086821685038,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0001906379664071351,
+      "sampling_ci95_p": [
+        0.970819211525333,
+        0.9715665123536489
+      ],
+      "sampling_ci95_k": [
+        21.47647468146234,
+        21.540889655545264
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22270956,
+      "reserve": 9
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 10,
+      "j": 4,
+      "p": 0.9941977317387191,
+      "k": 25.187724911547527,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 8.159276622001041e-05,
+      "sampling_ci95_p": [
+        0.9940378099169278,
+        0.9943576535605103
+      ],
+      "sampling_ci95_k": [
+        25.118485576294027,
+        25.256964246801026
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22270966,
+      "reserve": 9
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 6,
+      "j": 1,
+      "p": 0.12430393240943285,
+      "k": 8.37214774101889,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.0003129895907638363,
+      "sampling_ci95_p": [
+        0.12369047281153574,
+        0.12491739200732997
+      ],
+      "sampling_ci95_k": [
+        8.363414876227207,
+        8.380880605810573
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 22266936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 6,
+      "j": 2,
+      "p": 0.2837272336187287,
+      "k": 10.278617200437015,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006329212817334172,
+      "sampling_ci95_p": [
+        0.2824867079065312,
+        0.2849677593309262
+      ],
+      "sampling_ci95_k": [
+        10.266114973600791,
+        10.29111942727324
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22266946,
+      "reserve": 6
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 6,
+      "j": 3,
+      "p": 0.4450003159987543,
+      "k": 11.867184226201836,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0007946332714447048,
+      "sampling_ci95_p": [
+        0.44344283478672264,
+        0.4465577972107859
+      ],
+      "sampling_ci95_k": [
+        11.852126158708382,
+        11.88224229369529
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22266956,
+      "reserve": 5
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 6,
+      "j": 4,
+      "p": 0.585430677397428,
+      "k": 13.283624334279013,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0008382262652786302,
+      "sampling_ci95_p": [
+        0.5837877539174819,
+        0.5870736008773741
+      ],
+      "sampling_ci95_k": [
+        13.265794107262012,
+        13.301454561296016
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22266966,
+      "reserve": 6
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 7,
+      "j": 1,
+      "p": 0.25965076674100174,
+      "k": 10.035970516567032,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.00043789005009550465,
+      "sampling_ci95_p": [
+        0.2587925022428145,
+        0.26050903123918895
+      ],
+      "sampling_ci95_k": [
+        10.027320782558046,
+        10.044620250576015
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 22267936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 7,
+      "j": 2,
+      "p": 0.49957608178784546,
+      "k": 12.406113414264212,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006909523562054399,
+      "sampling_ci95_p": [
+        0.4982218151696828,
+        0.5009303484060081
+      ],
+      "sampling_ci95_k": [
+        12.392646046719307,
+        12.419580781809117
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22267946,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 7,
+      "j": 3,
+      "p": 0.6898773453261017,
+      "k": 14.478889836765312,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0007095261147360661,
+      "sampling_ci95_p": [
+        0.688486674141219,
+        0.6912680165109844
+      ],
+      "sampling_ci95_k": [
+        14.461563775585944,
+        14.496215897944682
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22267956,
+      "reserve": 6
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 7,
+      "j": 4,
+      "p": 0.8177943548153161,
+      "k": 16.356296462561932,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006176458713036827,
+      "sampling_ci95_p": [
+        0.8165837689075609,
+        0.8190049407230714
+      ],
+      "sampling_ci95_k": [
+        16.333774610709877,
+        16.37881831441399
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22267966,
+      "reserve": 7
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 8,
+      "j": 1,
+      "p": 0.41512714228621533,
+      "k": 11.578363877980541,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.0005029934358556782,
+      "sampling_ci95_p": [
+        0.4141412751519382,
+        0.41611300942049245
+      ],
+      "sampling_ci95_k": [
+        11.568832299857581,
+        11.587895456103503
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 22268936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 8,
+      "j": 2,
+      "p": 0.6872051486633337,
+      "k": 14.445597536352594,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006178939125252038,
+      "sampling_ci95_p": [
+        0.6859940765947843,
+        0.6884162207318831
+      ],
+      "sampling_ci95_k": [
+        14.430509060384724,
+        14.460686012320465
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22268946,
+      "reserve": 7
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 8,
+      "j": 3,
+      "p": 0.8511023234314881,
+      "k": 16.975960981916312,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0005090891123510301,
+      "sampling_ci95_p": [
+        0.8501045087712801,
+        0.852100138091696
+      ],
+      "sampling_ci95_k": [
+        16.95739754597257,
+        16.994524417860056
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22268956,
+      "reserve": 8
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 8,
+      "j": 4,
+      "p": 0.9363187444558793,
+      "k": 19.462810748714617,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00035109375275056617,
+      "sampling_ci95_p": [
+        0.9356306007004882,
+        0.9370068882112703
+      ],
+      "sampling_ci95_k": [
+        19.43303420111547,
+        19.492587296313765
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22268966,
+      "reserve": 8
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 9,
+      "j": 1,
+      "p": 0.5595237494302004,
+      "k": 13.002463091770066,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.0005220317618816048,
+      "sampling_ci95_p": [
+        0.5585005671769125,
+        0.5605469316834883
+      ],
+      "sampling_ci95_k": [
+        12.992082005298055,
+        13.013567426255863
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 22269936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 9,
+      "j": 2,
+      "p": 0.8196917358648247,
+      "k": 16.391595514558308,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00048081308840107717,
+      "sampling_ci95_p": [
+        0.8187493422115586,
+        0.8206341295180908
+      ],
+      "sampling_ci95_k": [
+        16.3740631361379,
+        16.409127892978713
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22269946,
+      "reserve": 8
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 9,
+      "j": 3,
+      "p": 0.9384367681747507,
+      "k": 19.554459381121752,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.000308820760132267,
+      "sampling_ci95_p": [
+        0.9378314794848915,
+        0.93904205686461
+      ],
+      "sampling_ci95_k": [
+        19.528268040513602,
+        19.580650721729903
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22269956,
+      "reserve": 9
+    },
+    {
+      "kind": "straight",
+      "name": "顺子",
+      "m": 9,
+      "j": 4,
+      "p": 0.9824290548460974,
+      "k": 22.695300837377136,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00016244544605800268,
+      "sampling_ci95_p": [
+        0.9821106617718237,
+        0.9827474479203712
+      ],
+      "sampling_ci95_k": [
+        22.655313605723336,
+        22.73528806903094
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 22269966,
+      "reserve": 9
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 6,
+      "j": 1,
+      "p": 0.1182383346385475,
+      "k": 8.760071139508105,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.1182383346385475,
+        0.1182383346385475
+      ],
+      "sampling_ci95_k": [
+        8.760071139508105,
+        8.760071139508105
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.8817616653614525
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 6,
+      "j": 2,
+      "p": 0.3135338766097473,
+      "k": 10.710561678878568,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.3135338766097473,
+        0.3135338766097473
+      ],
+      "sampling_ci95_k": [
+        10.710561678878568,
+        10.710561678878568
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.6864661233902527
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 6,
+      "j": 3,
+      "p": 0.5222461966457169,
+      "k": 12.180378249276899,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5222461966457169,
+        0.5222461966457169
+      ],
+      "sampling_ci95_k": [
+        12.180378249276899,
+        12.180378249276899
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.4777538033542831
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 6,
+      "j": 4,
+      "p": 0.6972606919651163,
+      "k": 13.332628446157937,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.6972606919651163,
+        0.6972606919651163
+      ],
+      "sampling_ci95_k": [
+        13.332628446157937,
+        13.332628446157937
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.3027393080348837
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 7,
+      "j": 1,
+      "p": 0.26703613558553696,
+      "k": 10.330378479483675,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.26703613558553696,
+        0.26703613558553696
+      ],
+      "sampling_ci95_k": [
+        10.330378479483675,
+        10.330378479483675
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.732963864414463
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 7,
+      "j": 2,
+      "p": 0.564154808605521,
+      "k": 12.45095407276306,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.564154808605521,
+        0.564154808605521
+      ],
+      "sampling_ci95_k": [
+        12.45095407276306,
+        12.45095407276306
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.43584519139447897
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 7,
+      "j": 3,
+      "p": 0.7838425683849399,
+      "k": 13.931796901799746,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7838425683849399,
+        0.7838425683849399
+      ],
+      "sampling_ci95_k": [
+        13.931796901799746,
+        13.931796901799746
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.21615743161506007
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 7,
+      "j": 4,
+      "p": 0.9093333488129322,
+      "k": 15.038833204076154,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9093333488129322,
+        0.9093333488129322
+      ],
+      "sampling_ci95_k": [
+        15.038833204076154,
+        15.038833204076154
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.09066665118706785
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 8,
+      "j": 1,
+      "p": 0.446507794917959,
+      "k": 11.671193346791432,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.446507794917959,
+        0.446507794917959
+      ],
+      "sampling_ci95_k": [
+        11.671193346791432,
+        11.671193346791432
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.553492205082041
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 8,
+      "j": 2,
+      "p": 0.7674028810521694,
+      "k": 13.818030112747401,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7674028810521694,
+        0.7674028810521694
+      ],
+      "sampling_ci95_k": [
+        13.818030112747401,
+        13.818030112747401
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.23259711894783064
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 8,
+      "j": 3,
+      "p": 0.9251870708586251,
+      "k": 15.271662142297146,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9251870708586251,
+        0.9251870708586251
+      ],
+      "sampling_ci95_k": [
+        15.271662142297146,
+        15.271662142297146
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.07481292914137494
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 8,
+      "j": 4,
+      "p": 0.9817822568901297,
+      "k": 16.277622757189885,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9817822568901297,
+        0.9817822568901297
+      ],
+      "sampling_ci95_k": [
+        16.277622757189885,
+        16.277622757189885
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.018217743109870344
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 9,
+      "j": 1,
+      "p": 0.5874655509009693,
+      "k": 12.60145591469269,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5874655509009693,
+        0.5874655509009693
+      ],
+      "sampling_ci95_k": [
+        12.60145591469269,
+        12.60145591469269
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.4125344490990307
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 9,
+      "j": 2,
+      "p": 0.8741698356300225,
+      "k": 14.712195670884835,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8741698356300225,
+        0.8741698356300225
+      ],
+      "sampling_ci95_k": [
+        14.712195670884835,
+        14.712195670884835
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.12583016436997752
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 9,
+      "j": 3,
+      "p": 0.973418918581438,
+      "k": 15.979998636489057,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.973418918581438,
+        0.973418918581438
+      ],
+      "sampling_ci95_k": [
+        15.979998636489057,
+        15.979998636489057
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.02658108141856197
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 9,
+      "j": 4,
+      "p": 0.9963912839035648,
+      "k": 16.856905744684973,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9963912839035648,
+        0.9963912839035648
+      ],
+      "sampling_ci95_k": [
+        16.856905744684973,
+        16.856905744684973
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.003608716096435205
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 10,
+      "j": 1,
+      "p": 0.7194743520999529,
+      "k": 13.486352585521757,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7194743520999529,
+        0.7194743520999529
+      ],
+      "sampling_ci95_k": [
+        13.486352585521757,
+        13.486352585521757
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.2805256479000471
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 10,
+      "j": 2,
+      "p": 0.934139018099508,
+      "k": 15.403131103661417,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.934139018099508,
+        0.934139018099508
+      ],
+      "sampling_ci95_k": [
+        15.403131103661417,
+        15.403131103661417
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.06586098190049205
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 10,
+      "j": 3,
+      "p": 0.9890830596521051,
+      "k": 16.567117111001412,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9890830596521051,
+        0.9890830596521051
+      ],
+      "sampling_ci95_k": [
+        16.567117111001412,
+        16.567117111001412
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.010916940347894921
+    },
+    {
+      "kind": "flush",
+      "name": "同花",
+      "m": 10,
+      "j": 4,
+      "p": 0.9988750582419702,
+      "k": 16.955393359068324,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9988750582419702,
+        0.9988750582419702
+      ],
+      "sampling_ci95_k": [
+        16.955393359068324,
+        16.955393359068324
+      ],
+      "strategy_optimality_gap": "zero",
+      "failure": 0.001124941758029796
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 6,
+      "j": 1,
+      "p": 0.058117414086640486,
+      "k": 7.895184884329402,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.058117414086640486,
+        0.058117414086640486
+      ],
+      "sampling_ci95_k": [
+        7.895184884329402,
+        7.895184884329402
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 6,
+      "j": 2,
+      "p": 0.147906697224129,
+      "k": 9.383745863332619,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.147906697224129,
+        0.147906697224129
+      ],
+      "sampling_ci95_k": [
+        9.383745863332619,
+        9.383745863332619
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 6,
+      "j": 3,
+      "p": 0.26107883201814613,
+      "k": 10.722789253122386,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.26107883201814613,
+        0.26107883201814613
+      ],
+      "sampling_ci95_k": [
+        10.722789253122386,
+        10.722789253122386
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 6,
+      "j": 4,
+      "p": 0.38216363319778146,
+      "k": 11.974503530542666,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.38216363319778146,
+        0.38216363319778146
+      ],
+      "sampling_ci95_k": [
+        11.974503530542666,
+        11.974503530542666
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 7,
+      "j": 1,
+      "p": 0.15332771662597422,
+      "k": 9.454459598225625,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.15332771662597422,
+        0.15332771662597422
+      ],
+      "sampling_ci95_k": [
+        9.454459598225625,
+        9.454459598225625
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 7,
+      "j": 2,
+      "p": 0.33189573657169424,
+      "k": 11.46315974557902,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.33189573657169424,
+        0.33189573657169424
+      ],
+      "sampling_ci95_k": [
+        11.46315974557902,
+        11.46315974557902
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 7,
+      "j": 3,
+      "p": 0.5091557313994498,
+      "k": 13.268579020864507,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5091557313994498,
+        0.5091557313994498
+      ],
+      "sampling_ci95_k": [
+        13.268579020864507,
+        13.268579020864507
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 7,
+      "j": 4,
+      "p": 0.6595878401962683,
+      "k": 14.902738210517821,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.6595878401962683,
+        0.6595878401962683
+      ],
+      "sampling_ci95_k": [
+        14.902738210517821,
+        14.902738210517821
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 8,
+      "j": 1,
+      "p": 0.2870399205755795,
+      "k": 11.006869662472921,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.2870399205755795,
+        0.2870399205755795
+      ],
+      "sampling_ci95_k": [
+        11.006869662472921,
+        11.006869662472921
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 8,
+      "j": 2,
+      "p": 0.5285966573990191,
+      "k": 13.472508905436921,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5285966573990191,
+        0.5285966573990191
+      ],
+      "sampling_ci95_k": [
+        13.472508905436921,
+        13.472508905436921
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 8,
+      "j": 3,
+      "p": 0.7155427644125701,
+      "k": 15.580609642598132,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7155427644125701,
+        0.7155427644125701
+      ],
+      "sampling_ci95_k": [
+        15.580609642598132,
+        15.580609642598132
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 8,
+      "j": 4,
+      "p": 0.8426782896206054,
+      "k": 17.37462645464468,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8426782896206054,
+        0.8426782896206054
+      ],
+      "sampling_ci95_k": [
+        17.37462645464468,
+        17.37462645464468
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 9,
+      "j": 1,
+      "p": 0.4327658517744436,
+      "k": 12.486397455926198,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.4327658517744436,
+        0.4327658517744436
+      ],
+      "sampling_ci95_k": [
+        12.486397455926198,
+        12.486397455926198
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 9,
+      "j": 2,
+      "p": 0.6906474429579961,
+      "k": 15.2747580492056,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.6906474429579961,
+        0.6906474429579961
+      ],
+      "sampling_ci95_k": [
+        15.2747580492056,
+        15.2747580492056
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 9,
+      "j": 3,
+      "p": 0.8500803293306998,
+      "k": 17.500913240442685,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.8500803293306998,
+        0.8500803293306998
+      ],
+      "sampling_ci95_k": [
+        17.500913240442685,
+        17.500913240442685
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 9,
+      "j": 4,
+      "p": 0.937278429559889,
+      "k": 19.394857286898887,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.937278429559889,
+        0.937278429559889
+      ],
+      "sampling_ci95_k": [
+        19.394857286898887,
+        19.394857286898887
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 10,
+      "j": 1,
+      "p": 0.5487484722667042,
+      "k": 13.683895815709752,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.5487484722667042,
+        0.5487484722667042
+      ],
+      "sampling_ci95_k": [
+        13.683895815709752,
+        13.683895815709752
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 10,
+      "j": 2,
+      "p": 0.7834010748232632,
+      "k": 16.474676769512726,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.7834010748232632,
+        0.7834010748232632
+      ],
+      "sampling_ci95_k": [
+        16.474676769512726,
+        16.474676769512726
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 10,
+      "j": 3,
+      "p": 0.9079405617406412,
+      "k": 18.632760195170277,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9079405617406412,
+        0.9079405617406412
+      ],
+      "sampling_ci95_k": [
+        18.632760195170277,
+        18.632760195170277
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "full_house",
+      "name": "葫芦",
+      "m": 10,
+      "j": 4,
+      "p": 0.9667934903318566,
+      "k": 20.476406524623027,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.9667934903318566,
+        0.9667934903318566
+      ],
+      "sampling_ci95_k": [
+        20.476406524623027,
+        20.476406524623027
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 6,
+      "j": 1,
+      "p": 0.007465350961932436,
+      "k": 9.351341208317953,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.007465350961932436,
+        0.007465350961932436
+      ],
+      "sampling_ci95_k": [
+        9.351341208317953,
+        9.351341208317953
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 6,
+      "j": 2,
+      "p": 0.023924953649441166,
+      "k": 12.019724082130773,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.023924953649441166,
+        0.023924953649441166
+      ],
+      "sampling_ci95_k": [
+        12.019724082130773,
+        12.019724082130773
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 6,
+      "j": 3,
+      "p": 0.051596319110709825,
+      "k": 14.224262783948205,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.051596319110709825,
+        0.051596319110709825
+      ],
+      "sampling_ci95_k": [
+        14.224262783948205,
+        14.224262783948205
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 6,
+      "j": 4,
+      "p": 0.0912619766287079,
+      "k": 16.202187771389347,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.0912619766287079,
+        0.0912619766287079
+      ],
+      "sampling_ci95_k": [
+        16.202187771389347,
+        16.202187771389347
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 7,
+      "j": 1,
+      "p": 0.016086897379694945,
+      "k": 11.032660928436803,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.016086897379694945,
+        0.016086897379694945
+      ],
+      "sampling_ci95_k": [
+        11.032660928436803,
+        11.032660928436803
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 7,
+      "j": 2,
+      "p": 0.049040672652801445,
+      "k": 14.075017251040334,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.049040672652801445,
+        0.049040672652801445
+      ],
+      "sampling_ci95_k": [
+        14.075017251040334,
+        14.075017251040334
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 7,
+      "j": 3,
+      "p": 0.10157795485042564,
+      "k": 16.603415015763797,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.10157795485042564,
+        0.10157795485042564
+      ],
+      "sampling_ci95_k": [
+        16.603415015763797,
+        16.603415015763797
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 7,
+      "j": 4,
+      "p": 0.17366762390755142,
+      "k": 18.869449597752308,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.17366762390755142,
+        0.17366762390755142
+      ],
+      "sampling_ci95_k": [
+        18.869449597752308,
+        18.869449597752308
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 8,
+      "j": 1,
+      "p": 0.026240861040032502,
+      "k": 12.240662240820676,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.026240861040032502,
+        0.026240861040032502
+      ],
+      "sampling_ci95_k": [
+        12.240662240820676,
+        12.240662240820676
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 8,
+      "j": 2,
+      "p": 0.07826603578634027,
+      "k": 15.631910490790238,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.07826603578634027,
+        0.07826603578634027
+      ],
+      "sampling_ci95_k": [
+        15.631910490790238,
+        15.631910490790238
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 8,
+      "j": 3,
+      "p": 0.15834766674402187,
+      "k": 18.443056489320387,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.15834766674402187,
+        0.15834766674402187
+      ],
+      "sampling_ci95_k": [
+        18.443056489320387,
+        18.443056489320387
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 8,
+      "j": 4,
+      "p": 0.26208831133193666,
+      "k": 20.901552692090764,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.26208831133193666,
+        0.26208831133193666
+      ],
+      "sampling_ci95_k": [
+        20.901552692090764,
+        20.901552692090764
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 9,
+      "j": 1,
+      "p": 0.04081902871688393,
+      "k": 13.488256196664226,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.04081902871688393,
+        0.04081902871688393
+      ],
+      "sampling_ci95_k": [
+        13.488256196664226,
+        13.488256196664226
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 9,
+      "j": 2,
+      "p": 0.11272986332006144,
+      "k": 17.031163117780274,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.11272986332006144,
+        0.11272986332006144
+      ],
+      "sampling_ci95_k": [
+        17.031163117780274,
+        17.031163117780274
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 9,
+      "j": 3,
+      "p": 0.2153676357707658,
+      "k": 19.893680018766325,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.2153676357707658,
+        0.2153676357707658
+      ],
+      "sampling_ci95_k": [
+        19.893680018766325,
+        19.893680018766325
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 9,
+      "j": 4,
+      "p": 0.3397324134149672,
+      "k": 22.362077811464417,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.3397324134149672,
+        0.3397324134149672
+      ],
+      "sampling_ci95_k": [
+        22.362077811464417,
+        22.362077811464417
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 10,
+      "j": 1,
+      "p": 0.05676667284339651,
+      "k": 14.52620290393983,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.05676667284339651,
+        0.05676667284339651
+      ],
+      "sampling_ci95_k": [
+        14.52620290393983,
+        14.52620290393983
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 10,
+      "j": 2,
+      "p": 0.14932059534932737,
+      "k": 18.191810288633633,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.14932059534932737,
+        0.14932059534932737
+      ],
+      "sampling_ci95_k": [
+        18.191810288633633,
+        18.191810288633633
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 10,
+      "j": 3,
+      "p": 0.2787748580920384,
+      "k": 21.230706666944478,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.2787748580920384,
+        0.2787748580920384
+      ],
+      "sampling_ci95_k": [
+        21.230706666944478,
+        21.230706666944478
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "four",
+      "name": "四条",
+      "m": 10,
+      "j": 4,
+      "p": 0.43166742563400357,
+      "k": 23.901573339028833,
+      "optimal_strategy": true,
+      "exact_probability": true,
+      "method": "exact_dynamic_programming",
+      "sampling_se_p": 0,
+      "sampling_ci95_p": [
+        0.43166742563400357,
+        0.43166742563400357
+      ],
+      "sampling_ci95_k": [
+        23.901573339028833,
+        23.901573339028833
+      ],
+      "strategy_optimality_gap": "zero"
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 6,
+      "j": 1,
+      "p": 0.0018555247776047144,
+      "k": 9.037768958251474,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 2.105172058656342e-05,
+      "sampling_ci95_p": [
+        0.0018142634052550502,
+        0.0018967861499543787
+      ],
+      "sampling_ci95_k": [
+        9.013729217776156,
+        9.061808698726795
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 23266936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 6,
+      "j": 2,
+      "p": 0.008480288734958333,
+      "k": 11.513442990949951,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00010285447870476345,
+      "sampling_ci95_p": [
+        0.008278693956696996,
+        0.00868188351321967
+      ],
+      "sampling_ci95_k": [
+        11.466118499950383,
+        11.56076748194952
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23266946,
+      "reserve": 3
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 6,
+      "j": 3,
+      "p": 0.02256259404380001,
+      "k": 13.666335863782857,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00020915958931672722,
+      "sampling_ci95_p": [
+        0.022152641248739224,
+        0.022972546838860797
+      ],
+      "sampling_ci95_k": [
+        13.619236422077698,
+        13.713435305488014
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23266956,
+      "reserve": 3
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 6,
+      "j": 4,
+      "p": 0.044757214174917646,
+      "k": 15.48176468599063,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0003229831557001054,
+      "sampling_ci95_p": [
+        0.04412416718974544,
+        0.04539026116008985
+      ],
+      "sampling_ci95_k": [
+        15.441042404870936,
+        15.522486967110323
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23266966,
+      "reserve": 3
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 7,
+      "j": 1,
+      "p": 0.005793407530046033,
+      "k": 10.820641816970339,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 4.4740914633908916e-05,
+      "sampling_ci95_p": [
+        0.005705715337363571,
+        0.005881099722728494
+      ],
+      "sampling_ci95_k": [
+        10.789166055859933,
+        10.852117578080742
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 23267936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 7,
+      "j": 2,
+      "p": 0.024470777750198458,
+      "k": 13.885566927273763,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0001775053799234668,
+      "sampling_ci95_p": [
+        0.024122867205548463,
+        0.024818688294848453
+      ],
+      "sampling_ci95_k": [
+        13.845595514433603,
+        13.925538340113922
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23267946,
+      "reserve": 6
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 7,
+      "j": 3,
+      "p": 0.06133335087576543,
+      "k": 16.426878777209282,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00034529562116316904,
+      "sampling_ci95_p": [
+        0.06065657145828562,
+        0.06201013029324524
+      ],
+      "sampling_ci95_k": [
+        16.392969704288852,
+        16.460787850129712
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23267956,
+      "reserve": 5
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 7,
+      "j": 4,
+      "p": 0.11835376545562808,
+      "k": 18.669131520234572,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0005162841104354541,
+      "sampling_ci95_p": [
+        0.11734184859917458,
+        0.11936568231208157
+      ],
+      "sampling_ci95_k": [
+        18.636183172153668,
+        18.702079868315472
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23267966,
+      "reserve": 5
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 8,
+      "j": 1,
+      "p": 0.012746808982990597,
+      "k": 12.353286603906053,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 7.61575628966291e-05,
+      "sampling_ci95_p": [
+        0.012597540159713204,
+        0.01289607780626799
+      ],
+      "sampling_ci95_k": [
+        12.329249265926382,
+        12.377323941885724
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 23268936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 8,
+      "j": 2,
+      "p": 0.05117199694181517,
+      "k": 15.894411129736516,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00026416734785714727,
+      "sampling_ci95_p": [
+        0.050654228940015165,
+        0.05168976494361518
+      ],
+      "sampling_ci95_k": [
+        15.861104448529677,
+        15.927717810943356
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23268946,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 8,
+      "j": 3,
+      "p": 0.12120610054116311,
+      "k": 18.76200449556078,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00047789838236725985,
+      "sampling_ci95_p": [
+        0.12026941971172328,
+        0.12214278137060294
+      ],
+      "sampling_ci95_k": [
+        18.73150585744415,
+        18.79250313367741
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23268956,
+      "reserve": 7
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 8,
+      "j": 4,
+      "p": 0.22145020780936048,
+      "k": 21.25182732303904,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006621951802522741,
+      "sampling_ci95_p": [
+        0.22015230525606602,
+        0.22274811036265493
+      ],
+      "sampling_ci95_k": [
+        21.225902934138823,
+        21.27775171193926
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23268966,
+      "reserve": 5
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 9,
+      "j": 1,
+      "p": 0.02196105982040085,
+      "k": 13.59722564809462,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.00011990532556661343,
+      "sampling_ci95_p": [
+        0.021726045382290286,
+        0.022196074258511413
+      ],
+      "sampling_ci95_k": [
+        13.570224859318396,
+        13.624226436870844
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 23269936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 9,
+      "j": 2,
+      "p": 0.08193858205397661,
+      "k": 17.366203507022323,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0003402729018344694,
+      "sampling_ci95_p": [
+        0.08127164716638105,
+        0.08260551694157217
+      ],
+      "sampling_ci95_k": [
+        17.33955933545531,
+        17.392847678589334
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23269946,
+      "reserve": 5
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 9,
+      "j": 3,
+      "p": 0.18413695008944544,
+      "k": 20.43111279850916,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0005668767568913681,
+      "sampling_ci95_p": [
+        0.18302587164593836,
+        0.18524802853295252
+      ],
+      "sampling_ci95_k": [
+        20.405528324124525,
+        20.456697272893795
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23269956,
+      "reserve": 5
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 9,
+      "j": 4,
+      "p": 0.330146370934045,
+      "k": 23.236196447428707,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0007505019243879087,
+      "sampling_ci95_p": [
+        0.32867538716224465,
+        0.3316173547058453
+      ],
+      "sampling_ci95_k": [
+        23.21261467023787,
+        23.259778224619545
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23269966,
+      "reserve": 8
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 10,
+      "j": 1,
+      "p": 0.03277484800180424,
+      "k": 14.619265396303538,
+      "optimal_strategy": true,
+      "exact_probability": false,
+      "method": "sampled_initial_hands_exact_optimal_one_discard",
+      "sampling_se_p": 0.0001595127468983605,
+      "sampling_ci95_p": [
+        0.032462203017883454,
+        0.033087492985725026
+      ],
+      "sampling_ci95_k": [
+        14.592772650632776,
+        14.6457581419743
+      ],
+      "strategy_optimality_gap": "zero",
+      "n": 200000,
+      "seed": 23270936,
+      "reserve": 4
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 10,
+      "j": 2,
+      "p": 0.11294310449318169,
+      "k": 18.492958606816334,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.00040423665818067883,
+      "sampling_ci95_p": [
+        0.11215080064314756,
+        0.11373540834321583
+      ],
+      "sampling_ci95_k": [
+        18.467160930979354,
+        18.518756282653314
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23270946,
+      "reserve": 9
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 10,
+      "j": 3,
+      "p": 0.24257067871205945,
+      "k": 21.673688964383018,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0006359602381225038,
+      "sampling_ci95_p": [
+        0.24132419664533936,
+        0.24381716077877955
+      ],
+      "sampling_ci95_k": [
+        21.648791651581856,
+        21.698586277184184
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23270956,
+      "reserve": 10
+    },
+    {
+      "kind": "straight_flush",
+      "name": "同花顺",
+      "m": 10,
+      "j": 4,
+      "p": 0.40793085276449814,
+      "k": 24.44811097224059,
+      "optimal_strategy": false,
+      "exact_probability": false,
+      "method": "independent_evaluation_of_selected_lookahead_policy",
+      "sampling_se_p": 0.0007761737777587441,
+      "sampling_ci95_p": [
+        0.406409552160091,
+        0.4094521533689053
+      ],
+      "sampling_ci95_k": [
+        24.425492773012625,
+        24.470729171468548
+      ],
+      "strategy_optimality_gap": "unknown; the evaluated feasible policy may underperform the optimum",
+      "n": 200000,
+      "seed": 23270966,
+      "reserve": 10
+    }
+  ]
+}

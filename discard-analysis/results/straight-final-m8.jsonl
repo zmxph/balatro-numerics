@@ -1,0 +1,4 @@
+{"kind":"straight","m":8,"j":1,"reserve":4,"n":200000,"p":0.41512714228621533,"se":0.0005029934358556782,"seconds":5.3861817,"phase":"final","seed":22268936,"optimal_strategy":true}
+{"kind":"straight","m":8,"j":2,"reserve":7,"n":200000,"p":0.6872051486633337,"se":0.0006178939125252038,"seconds":19.6620748,"phase":"final","seed":22268946,"optimal_strategy":false}
+{"kind":"straight","m":8,"j":3,"reserve":8,"n":200000,"p":0.8511023234314881,"se":0.0005090891123510301,"seconds":11.9274413,"phase":"final","seed":22268956,"optimal_strategy":false}
+{"kind":"straight","m":8,"j":4,"reserve":8,"n":200000,"p":0.9363187444558793,"se":0.00035109375275056617,"seconds":19.5391846,"phase":"final","seed":22268966,"optimal_strategy":false}

@@ -1,0 +1,34 @@
+[manifest]
+version = "1.0.0"
+priority = 10
+dump_lua = false
+
+[[patches]]
+[patches.module]
+source = "probability.lua"
+before = "main.lua"
+name = "hprob_engine"
+
+[[patches]]
+[patches.module]
+source = "jokers.lua"
+before = "main.lua"
+name = "hprob_jokers"
+
+[[patches]]
+[patches.module]
+source = "joint_suits.lua"
+before = "main.lua"
+name = "hprob_joint_suits"
+
+[[patches]]
+[patches.module]
+source = "joker_tooltip.lua"
+before = "main.lua"
+name = "hprob_tooltip"
+
+[[patches]]
+[patches.copy]
+target = "main.lua"
+position = "append"
+sources = ["main.lua"]
